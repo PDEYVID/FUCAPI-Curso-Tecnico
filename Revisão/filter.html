@@ -1,0 +1,47 @@
+<html>
+<script>
+    /*FILTER*/
+    /*Como o próprio nome já pode induzir, este método é deve ser
+utilizado quando temos a necessidade de filtrar nossa lista de acordo
+com algum critério.*/
+
+
+    /*1 - Dado um array de números, retorne um novo array que tenha 
+        apenas os números que são 5 ou maiores.*/
+
+    let arr = [5, 3, 23, 6, 2, 0, -42]
+
+    let novoArray = arr.filter(function (num) {
+        // true -> elemento vai para novoarray
+        // false -> não vai 3
+
+        return num >= 5
+    })
+
+    console.log(novoArray);
+
+    /*2 - Dado um array de números, retorne um novo array que inclua 
+    apenas os números pares*/
+
+    let listaPares = arr.filter( function(num) {
+    return num%2 == 0
+    })
+
+    console.log(listaPares);
+
+    /*3- Dado um array de strings, retorna um novo array que inclui apenas aqueles
+    que têm 5 caracteres ou menos*/
+
+    let nomes = ["paulo", "luffy", "c3po", "kalissy",
+    "Goku", "r2d2", "bilbo", "etValdo"]
+
+   let nomesMenorque6 = nomes.filter( function( nome){
+         return nome.length <= 6
+    })
+
+    console.log(nomesMenorque6);
+
+
+    </script>
+
+    </html>

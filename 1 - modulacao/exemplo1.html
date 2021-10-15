@@ -1,0 +1,33 @@
+♦<html>
+    <script>
+
+        // funcao que retorna o menor de tres numeros inteiros 
+        function menor(x , y ,z){
+
+        let m
+
+        if( (x<y) && (x<z)){ 
+            m = x
+
+        }else {   
+            if (y < z)
+                m = y
+            else
+                m = z
+        } 
+        return m  
+
+
+        }
+
+        var a, b, c; 
+
+        a = parseInt(prompt("Digite o primeiro numero"))
+        b = parseInt(prompt("Digite o segundo numero"))
+        c = parseInt(prompt("Digite o terceiro numero"))
+
+
+        alert("o menor e" +menor(a, b, c));
+
+    </script>
+</html>

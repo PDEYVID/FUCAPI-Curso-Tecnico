@@ -1,0 +1,37 @@
+
+
+<html>
+    <script>
+        /* 
+            Dado um array de números, retorne um novo array que 
+            tenha apenas os números que são 5 ou maiores.
+        */
+
+        let arr = [ 5,3,23,6,2,0,-42]
+
+        let novoArray = arr.filter(  function(num) {
+            // true -> elemento vai para novoArray
+            // false -> não vai
+            return num >=5
+        })
+        
+        console.log(novoArray);
+
+        //filtrar apenas números pares
+        let listaPares = arr.filter(   function(num){
+            return num%2 == 0
+        } )
+
+        console.log(listaPares);
+
+
+        let nomes = ["Jose","Marcos","Daniele","Jamilly","Pedro","Thalhes",
+                "cLeMiLtOn"]
+        
+        let nomesMenorQue6 = nomes.filter( function( nome){
+            return nome.length <= 6
+        })
+        console.log(nomesMenorQue6);
+            
+    </script>
+</html>

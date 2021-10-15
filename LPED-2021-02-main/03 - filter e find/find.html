@@ -1,0 +1,51 @@
+
+
+<html>
+
+<script>
+
+    let nomes = ["Jose","Marcos","Daniele","Jamilly","Pedro","Thalhes",
+                "cLeMiLtOn"]
+
+    // forEach
+    nomes.forEach(  (nome,index,x) => {
+        //mostrando em cada alerta o nome e o indice
+        alert(nome+ " "+ index);
+    }  )
+    
+
+    // map ->retorna um array, executando uma funcao em cada elemento
+
+    //retorna string maiuscula
+    function stringMaiuscula(string=""){
+        return string.toUpperCase()
+    }
+    let nomesMaiuscula = nomes.map(stringMaiuscula)
+
+    // criem um array, com os nomes com 1º letra maiuscula
+
+
+
+    function primeiroMaiuscula(string=""){
+        //retorna uma string com a primeira letra maiuscula
+        return  string.charAt(0).toUpperCase() 
+        + string.substr(1).toLowerCase();
+    }
+    console.log(nomesMaiuscula.map(primeiroMaiuscula) )
+
+    // find -> Procurar um elemento
+    let query = prompt("Digite um nome para pesquisar")
+
+    let nome = nomes.find( function (n){
+        // query -> o que o usuario digitou
+        // n -> cada elemento do array nomes
+        return query == n
+    } )
+    alert(nome)
+
+
+
+
+ 
+</script>
+</html>

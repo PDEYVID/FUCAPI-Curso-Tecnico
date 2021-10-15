@@ -1,0 +1,40 @@
+<html>
+<script>
+    let nomes = ["paulo", "luffy", "c3po", "kalissy", "Goku", "r2d2", "bilbo", "etValdo"]
+    // forEach
+    nomes.forEach((nome, index, x) => {
+        //mostrando em casa alerta o nome e o indice
+        alert(nome + "" + index);
+    })
+
+    // map ->retorna um array, executando uma funcao em cada elemento
+    function stringMaiuscula(string = "") {
+        return string.toLocaleUpperCase() // ela retorna string maiuscula
+    }
+
+    let nomesMaiusculos = nomes.map(stringMaiuscula)
+
+    //Criem um array, com os nomes com 1º letra maiuscula
+
+    function primeiroMaiuscula(string = "") {
+        // retorna uma string com a primeira letra maiuscula 
+        return string.charAt(0).toUpperCase() + string.substr(1).toLocaleLowerCase();
+    }
+    console.log(nomesMaiusculos.map(primeiroMaiuscula))
+    //console.log(primeiroMaiuscula)
+
+
+    /* find -> Esta função auxiliar é particularmente interessante quando o
+objetivo é encontrar um item específico dentro de um Array .*/
+
+    let query = prompt("Digite um nome para pesquisar: ")
+
+    let nome = nomes.find(function (n) {
+        // query -> o que o usuario digitou
+        // n -> cada elemento do array nomes
+        return query == n
+    })
+    alert(nome)
+</script>
+
+</html>
