@@ -1,0 +1,57 @@
+label{
+    /**/
+    display: inline-block;
+    width: 90px;
+    font-size: 0.9em;/*90% da fonte do elemento pai  */
+    font-weight: bold;
+
+}
+
+input,textarea{
+    display: inline-block;
+    width: 200px;
+    font-size: 00.9em;
+    /*padding: vertical | horizontal*/
+    padding: 6px 12px ;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+    box-shadow: inset 2px 2px 2px #eee;
+}
+textarea{
+    resize: none;
+    height: 100px;
+}
+
+.hint{
+    background-color: #fffbe4;
+    border-radius: 3px;
+    border: 1px solid #CCC;
+    box-shadow: 1px 1px 3px rgba(0,0,0.2);
+    padding: 3px;
+    margin-left: 20px;
+    display: inline-block;
+}
+/*alinhar todos os elemntos filhos de .top no topo*/
+/* (*) - > significar selencinar todos*/
+/* a > * -> seletor de filhos de a*/
+.top > * {
+    vertical-align: top;
+}
+/* sumir com as mensagens*/
+.hint{
+    display: none;
+
+}
+/* selecionar a dica(.hint) do input selecionado*/
+input:focus + .hint , textarea:focus + .hint{
+    display: inline-block;
+}
+
+.error{
+    display: block;
+    color: red;
+    margin: 5px 0 0 99px;
+    font-size: 0.8em;
+    font-style: italic;
+
+}

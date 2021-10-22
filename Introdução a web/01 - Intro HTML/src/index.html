@@ -1,0 +1,179 @@
+<html>
+
+<head>
+    <title>São paulo</title>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <style>
+        
+        .container{
+            margin:0 auto;
+            width: 960px;
+        }
+        body {
+            font-family: 'Lucida Grande','Lucida Sans Unicode',Verdana,sans-serif;
+            line-height: 1.6;
+            background: #FFF1D6 url(images/noise.png);
+        }
+        .place{
+            background-color: #FFF;
+            border: 10px solid;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border-color: #CCC #999 #999 #CCC;
+            
+        }
+        /*selecionar todos os <a> dentro de <h1> */
+        h1 a{
+            color: #7E9F10;
+            text-decoration: none;
+        }
+        .subtitle {
+            background-color: #CCC;
+            padding: 8px 0;
+            border-bottom: 2px dashed #7E9F19;
+        }
+        /* selecionar todos <h2> dentro de .subtile */
+        .subtitle h2{
+            margin: 0;
+            
+            text-align: center;
+            
+        }
+        h1 a:hover{
+            color:#FFF;
+            background-color: #7E9F19;
+
+        }
+        .content_place{
+            padding:20px
+        }
+        /* ultimo <p> dentro de .place*/
+        .content_place p:last-child{
+            margin: 0;
+        }
+        .place3{
+            border-color: blueviolet;
+        }
+        /* todas as <img/> que estao dentro de .content_place */
+        .content_place img{
+            max-width: 250px;
+            border:1px solid #7E9F19;
+            padding:2px;
+            margin:10px 10px 0 0;
+            float:left
+        }
+        .places{
+            width: 660px;
+            float:left
+        }
+        .sidenote{
+            border: 1px solid #C9BC8F;
+            width: 260px;
+            float: right;
+            padding: 10px;
+            background-color: #FFFBE4;
+        }
+        /* todos  <h3> dentro de .sidenote*/
+        .sidenote h3{
+            font-size: 14px;
+            margin-top: 0;
+        }
+        .sidenote ol {
+            font-size: 12px;
+        }
+        .footer{
+            font-size: 12px;
+            text-align: center;
+        }
+        .clear{
+            clear:both;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1><a href="/">  O que eu mais gosto em São paulo </a></h1>
+        <div class="places">
+            <div class="place">
+
+                <div class="subtitle">
+                    <h2>Passear na Avenida Paulista!</h2>
+                </div>
+                <div class="content_place">
+                    <img src="images/paulista.jpg"  alt="Avenida Paulista">
+                    <p>
+                        Um dos principais centros financeiros da cidade, a avenida Paulista também possui diversas opções de
+                        entretenimento. Endereço do Museu de Arte de São Paulo, MASP, do Teatro Gazeta e muitos outros, a região é
+                        de
+                        fácil acesso graças às diversas linhas de onibus que cruzam a avenida e à linha de metrô que passa por baixo
+                        dela
+                    </p>
+                    <p >
+                        A avenida paulista sempre é assunto. O que será que estão falando a respeito no Twitter ?
+                    </p>
+                    <div class="clear"></div>
+
+                </div>
+
+            </div>
+
+            <div class="place">
+
+                <div class="subtitle">
+                    <h2>Os bares da Vila Madalena</h2>
+                </div>
+                <div class="content_place">
+                    <img src="images/vila_madalena.jpg"  alt="Vila Madalena">
+                    <p>
+                        Depois de um dia de trabalho, nada melhor do que um bom chopp, um petisco e uma conversa em uma mesa de bar.
+                        Opções de sobra na região das ruas Aspicuelta, Fradique Coutinho e Wisard.
+                    </p>
+                    <p>
+                        Veja quais os melhores bares e restaurantes da região no Guia da VEJA São Paulo.
+                    </p>      
+                    <div class="clear"></div>
+                </div>
+                
+            </div>
+
+            <div class="place place3" >
+                <div class="subtitle">
+                    <h2>O Parque do Ibirapuera</h2>
+                </div>
+                <div class="content_place">
+                    <img src="images/ibirapuera.jpg" alt="Parque ibirapuera"/>
+                    <p>
+                        Um dos cartões postais da cidade, o parque dispõe de mais de 1,5 km² de área verde, lagos artificiais e
+                        pistas de cooper e ciclismo. E se isso não fosse o suficiente, o parque
+                        costuma ser palco de diversos eventos culturais ao longo do ano.
+                    </p>
+                    <p>Veja no mapa como chegar ao parque.</p>
+                    <div class="clear"></div>
+                </div>
+                
+            </div>
+        </div>
+
+        <div class="sidenote">
+            <h3>E existem muitos outros lugares interessantes na cidade...</h3>
+            <ol>
+                <li>O mercado municipal</li>
+                <li>A sala de são paulo</li>
+                <li>OS estádio dos principais times de futebol da cidade</li>
+                <li>Diversos museus, como memorial da América Latina</li>
+                <li>E mais!!</li>
+            </ol>
+        </div>
+        <div class="footer clear">
+            <p>Parte do livro "HTML5 e CSS3: Domine a WEB"</p>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

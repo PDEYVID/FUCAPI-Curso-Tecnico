@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 960px;
+            margin: 0 auto;
+            border: 1px solid;
+            padding: 20px
+        }
+
+        .retangulo {
+            width: 100px;
+            height: 50px;
+            border: 1px solid;
+            margin-right: 10px;
+            float: left;
+        }
+
+        .retangulo2 {
+            width: 100px;
+            height: 50px;
+            margin-right: 10px;
+            border: 1px solid;
+            float: left;
+        }
+
+        .retangulo3 {
+            width: 100px;
+            height: 50px;
+            margin-right: 10px;
+            border: 1px solid;
+            float: left;
+        }
+        .anuncio{
+            width: 650px;
+            float: right;
+            border: 1px solid;
+            padding: 10px;
+        }
+        .menu{
+            float: left;
+            width:275px ;
+            border: 1px solid;
+        }
+        .foto_anuncio img{
+            max-width: 250px;
+        }
+        .foto_anuncio{
+            float: left;
+            margin: 0 10px;
+        }
+        .descricao_anuncio{
+            float: left;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class='menu'>
+            <ul>
+                <li>Automoveis</li>
+                <li>Casa</li>
+                <li>Servicos</li>
+            </ul>
+        </div>
+
+        <div class="anuncio">
+            <div class="foto_anuncio">
+                <img src="images/paulista.jpg"/>
+            </div>
+
+            <div class="descricao_anuncio">
+                <div style="margin: 0 auto; width: fit-content; ">
+                    <!-- div centraliza os retangulos -->
+                    <div class="retangulo"></div> <!-- no container -->
+                    <div class="retangulo2"></div>
+                    <div class="retangulo3"></div>
+                </div>
+                <div class="clear" style="clear: both;"></div>
+                <p>Teste</p>
+            </div>
+        </div>
+        
+        <div class="clear" style="clear: both;"></div>
+    </div>
+
+</body>
+
+</html>
