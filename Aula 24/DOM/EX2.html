@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1 id="id_h1" class="classes_h1">Mundo JS</h1>
+    <p id="corvinal" class="classe_p">Corvinal</p>
+    <p id="Grifinoria" class="classe_p">Grifinoria</p>
+    <p id="Sonserina" class="classe_p">Sonserina</p>
+    <p id="Lufa-Lufa" class="classe_p">Lufa-lufa</p>
+    <button type="button" id="bdefenir" onclick="definirCores()"> Definir cores
+    </button>
+
+    <script>
+        function definirCores(){
+            let cores = ["blue", "Red", "green", "yellow"]
+
+            let paragrafos = document.getElementsByTagName('p');
+          
+            for(let i = 0; i<paragrafos.length; i++ ){
+                paragrafos[i].style.backgroundColor = cores[i];
+            }
+        }
+    </script>
+</body>
+
+</html>

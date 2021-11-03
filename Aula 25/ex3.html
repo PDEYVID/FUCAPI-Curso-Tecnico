@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        /*CSS*/
+        .oculto {
+            display: none;
+        }
+    </style>
+</head>
+<!--HTML-->
+
+<body>
+    <h1 id="id_h1" class="classe_h1">Mundo JS</h1>
+    <p id="corvinal" class="oculto">Corvinal</p>
+    <p id="grifinoria" class="oculto">Grifinoria </p>
+    <p id="sonserina" class="oculto">Sonserina </p>
+    <p id="lufalufa" class="oculto"> Lufa-Lufa </p>
+
+    <button type="button" id="bdefinir" onclick="aparecer()">
+        Aparecium
+    </button>
+
+    <button type="button" onclick="encontra()"></button>
+
+    <!--Javascript-->
+    <script>
+        function encontra() {
+            let botao = document.querySelector('[type=button]')
+            botao.style.color ="red";
+        }
+
+        function aparecer() {
+            
+            let paragrafos = document.getElementsByClassName('oculto')
+
+
+            /*TENTATIVA -> 1 
+            for (let i = 0; i < paragrafos.length; i++) {
+                 //paragrafos[i].style.display="block";
+ 
+                 paragrafos[i].className = "";
+             }*/
+
+            // TENTATIVA -> 2
+            let i = 0;
+            while (paragrafos.length > 0) {
+                paragrafos[i].classList.remove("oculto");
+                //i++;
+            }
+        }
+
+    </script>
+</body>
+
+</html>

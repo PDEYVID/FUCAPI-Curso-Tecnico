@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="galeriaImg.css">
+
+</head>
+
+<body onload="galeria()">
+    <p>Galeria de imagens
+        <img src="imagens/zoomin.jpg" class="icones" onclick="aumentar()">
+        <img src="imagens/zoomout.jpg" class="icones" onclick="reduzir()">
+    </p>
+
+    <div>
+        <!--teste de caminhos-->
+        <img src="" alt="">
+    </div>
+
+    <script>
+        function galeria() {
+            let fotos = ["imagens/flor01.jpg", "imagens/flor02.jpg", "imagens/flor03.jpg",
+                "imagens/flor04.jpg", "imagens/flor05.jpg", "imagens/montanha01.jpg", "imagens/montanha02.jpg",
+                "imagens/montanha03.jpg", "imagens/montanha04.jpg", "imagens/montanha05.jpg"];
+
+            let minhadiv = document.querySelector("div");
+
+            for (i = 0; i < fotos.length; i++) {
+
+                let flor = document.createElement("img");
+
+                flor.src = fotos[i];
+
+                flor.classList.add("pequeno");
+
+                minhadiv.appendChild(flor)
+
+            }
+
+        }
+
+        function aumentar() {
+            let fotos = document.querySelectorAll("img.pequeno");
+            if (fotos.length > 0) {
+                for (i = 0; i < fotos.length; i++) {
+                    fotos[i].classList.add("medio");
+                    fotos[i].classList.remove("pequeno");
+                }
+            } else {
+                let fotos = document.querySelectorAll("img.medio");
+                for (i = 0; i < fotos.length; i++) {
+                    fotos[i].classList.add("grande");
+                    fotos[i].classList.remove("medio");
+                }
+            }
+        }
+
+        function reduzir() {
+            let fotos = document.querySelectorAll("img.grande");
+            if (fotos.length > 0) {
+                for (i = 0; i < fotos.length; i++) {
+                    fotos[i].classList.add("medio");
+                    fotos[i].classList.remove("grande");
+                }
+            } else {
+                let fotos = document.querySelectorAll("img.medio");
+                for (i = 0; i < fotos.length; i++) {
+                    fotos[i].classList.add("pequeno");
+                    fotos[i].classList.remove("medio");
+                }
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fieldset.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="retangulo"></div>
+        <form action="action">
+            <h1>Formulario</h1>
+            <fieldset>
+                <legend>Dados pessoais</legend>
+                <div class="form-container">
+                    <label> Nome: </label>
+                    <input type="text" name="nome">
+                </div>
+
+                <div class="form-container">
+                    <label for="">Endereço</label>
+                    <input type="text" name="Endereço">
+                </div>
+
+                <div class="form-container">
+                    <label for="">Cidade</label>
+                    <input type="text" name="Cidade">
+                </div>
+
+                <div class="form-container">
+                    <label for="">Estado: </label>
+                    <select name="Estado" id="">
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="GO">Goias</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                    </select>
+
+            </fieldset>
+
+            <fieldset>
+                <legend>Dados profissionais</legend>
+                <div class="form-container">
+                    <label style="display:block; width:fit-content"> Natureza do Cargo </label>
+
+                    <div class="col">
+                        <!--class="row" serve para deixar a coluna em dois-->
+
+                        <div class="row"> <input type="radio" name="cargo">Gerencia</input> </div>
+                        <div class="row"> <input type="radio" name="cargo">Finaceiro</input> </div>
+                        <div class="row"> <input type="radio" name="cargo">Recepção</input> </div>
+                        <div class="row"> <input type="radio" name="cargo">Administrativo</input> </div>
+                        <div class="row"> <input type="radio" name="cargo">Juridico</input> </div>
+                    </div>
+
+                    <div class="col">
+
+                        <div class="row"> <input type="radio" name="cargo">TI</input> </div>
+                        <div class="row"> <input type="radio" name="cargo">Marketing</input> </div>
+                        <div class="row"> <input type="radio" name="cargo">SAQ</input> </div>
+                        <div class="row"> <input type="radio" name="cargo">Ouvidoria</input> </div>
+                        <div class="row"> <input type="radio" name="cargo">RH</input> </div>
+                    </div>
+                </div>
+
+                <div class="form-container">
+                    <label style="display: block;"> Área de interesse</label>
+
+                    <div class="col">
+
+                        <div class="row"> <input type="checkbox"> Computação </input> </div>
+                        <div class="row"> <input type="checkbox"> Biologia </input> </div>
+                        <div class="row"> <input type="checkbox"> Meio Ambiente </input> </div>
+                    </div>
+
+                    <div class="col">
+
+                        <div class="row"> <input type="checkbox"> Engenharia </input> </div>
+                        <div class="row"> <input type="checkbox"> Historia </input> </div>
+                        <div class="row"> <input type="checkbox"> Design </input> </div>
+                    </div>
+
+
+                    <div class="form-container">
+                        <label for=""> Mini curriculo</label>
+                        <textarea name="curriculo" id=""></textarea>
+                    </div>
+
+                </div>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+            <button>Limpar</button>
+
+        </form>
+
+    </div>
+
+</body>
+
+</html>

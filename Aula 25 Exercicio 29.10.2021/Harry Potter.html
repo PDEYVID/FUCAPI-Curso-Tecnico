@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="Pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter/title>
+        <link rel="stylesheet" href="Harry Potter.css">
+</head>
+
+<body>
+
+    <h1 id="if_h1" class="classe_h1">Mundo Js</h1>
+    <div class="ver">
+        <p id="corvinal" class="oculto">Corvinal</p>
+    </div>
+    <div class="ver">
+        <p id="Grifinoria" class="oculto">Grifinoria</p>
+    </div>
+    <div class="ver">
+        <p id="sonserina" class="oculto">Sonserina</p>
+    </div>
+    <div class="ver">
+        <p id="lufalufa" class="oculto">Lufa-Lufa</p>
+    </div>
+    <button type="button" id="bdefinir" onclick="aparecer()">Aparecium</button>
+    <button type="button" id="bdefinir" onclick="desaparecer()">Desaparecium</button>
+    <script>
+
+        function aparecer() {
+            let paragrafos = document.getElementsByClassName('oculto')
+            for (let i = 0; i < paragrafos.length; i++) {
+                paragrafos[i].style.display = "block"
+            }
+        }
+        function desaparecer() {
+            let paragrafos = document.getElementsByClassName('ver')
+            for (let i = 0; i < paragrafos.length; i++) {
+                paragrafos[i].style.display = "none"
+            }
+        }
+    </script>
+</body>
+
+</html>
