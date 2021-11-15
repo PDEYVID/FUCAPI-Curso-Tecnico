@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<!--(2)Elaborar um programa para cadastrar os serviços a serem realizados por um auto
+center, que organize a ordem de execução dos serviços. Armazenar os serviços no
+navegador do usuário e a cada clique no botão Executar Serviço remover o
+primeiro serviço e exibí-lo na página. O programa deve atualizar o número de
+serviços pendentes quando:
+a. a página for aberta
+b. um serviço for incluído
+c. um serviço for removido-->
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/index.css">
+  <title>Exercício2</title>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-3">
+
+        <div class="container">
+          <img src="img/ex2.PNG">
+        </div>
+
+      </div>
+
+      <div class="col-sm-9">
+        <h1>Herbie: Controle de Serviços</h1>
+
+        <p>
+          <label for="inServico">Serviço - Veículo:</label>
+          <input type="text" id="inServico" class="form-control" autofocus>
+        </p>
+
+        <p>
+          <input type="button" value="Adicionar Serviço" id="btAdicionar" class="btn btn-outline-primary">
+          <input type="button" value="Executar Serviço" id="btExecutar" class="btn btn-outline-danger">
+        </p>
+
+        <h3> Serviços Pendentes:
+          <span id="outPendentes"></span>
+        </h3>
+        <p class="btn-dark text-white">&nbsp; Serviço em Execução:</p>
+        <h4 id="outExecucao"></h4>
+
+        <pre id="outCompras"></pre>
+      </div>
+    </div>
+  </div>
+  <script src="js/js2.js"></script>
+</body>
+
+</html>

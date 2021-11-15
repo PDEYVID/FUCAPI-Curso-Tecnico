@@ -1,0 +1,6 @@
+https://getbootstrap.com/docs/5.1/content/tables/
+
+https://rodrigomilano.com.br/a-grid-do-bootstrap-tudo-que-voce-sempre-quis-saber-mas-nao-tinha-a-quem-perguntar/
+
+https://replit.com/@ClemiltonFucapi/DOM
+

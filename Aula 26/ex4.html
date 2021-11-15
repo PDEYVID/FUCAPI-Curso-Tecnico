@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <div class="container">
+        <div id="formulario" class="panel panel-primary">
+            <!--panel-heading-->
+            <div class="panel-heading">
+                Meus Feitiços
+            </div>
+            <!--panel-body-->
+            <div class="panel-body">
+                Feitiço: <input id="inFeitico" type="text" />
+                Nível: <input id="inNivel" type="text" />
+                <span class="glyphicon glyphicon-plus" onclick="novoItem()"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="container col -md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <div class="table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Primeiro</th>
+                                <th scope="col">Segundo</th>
+                                <th scope="col">Terceiro</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th scope="row">1</th>
+                                <td>Paulo <img src="app.svg" alt=""></td>
+                                <td>10pt</td>
+                                <td>5pt</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">2</th>
+                                <td>Deyvid <img src="apple.svg" alt=""></td>
+                                <td>5pt</td>
+                                <td>8pt</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">3</th>
+                                <td>Daniel <img src="phone.svg" alt=""></td>
+                                <td>8pt</td>
+                                <td>11pt</td>
+                            </tr>
+                            <tr>
+                                <th scope="row">4</th>
+                                <td>LuFF <img src="megaphone.svg" alt=""></td>
+                                <td>15pt</td>
+                                <td>02pt</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Latest compiled and minified JavaScript -->
+    <!--<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>-->
+
+</body>
+<script>
+    function novoItem() {
+        // Adicionar uma nova linha na tabela(feitiço e nivel)
+        /* let input1 = document.getElementById("inFeitico");
+         let input2 = document.getElementById("inNivel");*/
+
+        let feitico = document.getElementById("inFeitico").value;
+        let nivel = document.getElementById("inNivel").value;
+
+        input1.value = ""
+        input2.value = "";
+
+        if (feitico != "" && nivel != "") {
+            // inserir na tabela 
+            let novaLinha = document.createElement("tr");
+
+
+            //montando as colunas <td>
+            let colunaFeiticio = document.createElement("td")
+            let colunaNivel = document.createElement("td")
+            colunaFeiticio.innerHTML = feitico;
+            colunaFeiticio.innerHTML = nivel;
+
+            // inserir(append) as colunas (td) na linha (tr)
+            novaLinha.appendChild(colunaFeiticio);
+            novaLinha.appendChild(colunaNivel);
+
+            // inserir na tabela
+            document.getElementById("tbody").appendChild(novaLinha)
+        }else{
+            alert("digite os dois campos")
+        }
+
+    }
+</script>
+
+</html>
