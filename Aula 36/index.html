@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+    <!-- Latest compiled and minified JavaScript -->
+</head>
+
+<body>
+    <div class="container">
+        <div id="formulario" class="panel panel-primary">
+            <!-- header panel -->
+            <div class="panel-heading">Meus feitiços</div>
+
+            <!-- body panel -->
+            <div class="panel-body">
+                Feitiço: <input id="inFeitico" type="text" /> Nível <input id="inNivel" type="text">
+                <span class="glyphicon glyphicon-plus" id="addFeitico"></span>
+            </div>
+
+        </div>
+    </div>
+
+
+    <div class="container col-md-3">
+        <div class="panel panel-default">
+            <div class="panel-body">
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th>Nível</th>
+                            <th>Feitiço</th>
+                            <th>Ações</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tbody">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script type="module" src="js/index.js"></script>
+
+</html>
